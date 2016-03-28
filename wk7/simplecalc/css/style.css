@@ -1,0 +1,70 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;  
+} 
+
+@import url(https://fonts.googleapis.com/css?family=Lato);
+
+body {
+	color:#D0A030;
+	font-family: 'Lato', sans-serif;
+	font-size:300%;
+	background-color: #202020;
+}
+
+
+#simplecalc {
+	padding:30px 50px;
+}
+
+#simplecalc > *{
+	margin-bottom: 30px;
+}
+
+#input {
+	background-color: #303030;
+	padding: 4px 16px;
+}
+
+#result {
+	background-color: #303030;
+	padding: 4px 16px;
+}
+
+button{
+  font-size: 100%;
+  color:#202020;
+  height:70px;
+  width:200px;
+  border-style:none;
+  border-radius: 4px;
+  border-bottom: 4px double;
+}
+
+.buttona{
+  background-color:#D0A030;
+}
+.buttona:hover{
+  background-color:#202020;
+  color:#D0A030;
+}
+
+.buttonb{
+  background-color:#DA0000;
+}
+.buttonb:hover{
+  background-color:#202020;
+  color:#DA0000;
+}
+
+.buttonc{
+  background-color:#C0C0C0;
+}
+.buttonc:hover{
+  background-color:#202020;
+  color:#C0C0C0;
+}
+

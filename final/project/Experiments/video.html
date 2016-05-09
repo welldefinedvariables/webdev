@@ -1,0 +1,81 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="stylesheet" href="css/app.css">
+    
+</head>
+
+<body >
+	<div id="container"></div> 
+
+	<video style="display: none;" autoplay id="previewVideo" data-videoid="JYpUXXD4xgc">
+    	<source src="itl.mp4" type="video/mp4"/>
+	</video>  
+	 
+
+
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/what-input/what-input.js"></script>
+    <script src="bower_components/foundation-sites/dist/foundation.js"></script>
+    <script src="js/app.js"></script>
+
+    <script>
+    	var body = document.getElementById("container");
+
+
+    	for(var i = 0; i<3; i++){
+	    	var col = document.createElement("div");
+	    	col.setAttribute('style', 'background:grey; padding:0px 0px;')
+			col.setAttribute('class', 'small-4 columns');
+			body.appendChild(col);
+
+			var rn = 25;
+			var vh = 100.0/rn;
+			for(var j = 0; j < rn; j++){
+				var parent = document.createElement("div");
+				parent.setAttribute('class','row');
+				parent.setAttribute('style', 'background:black; height:' + vh + 'vh');
+				col.appendChild(parent);
+
+				var canvas = document.createElement("canvas");
+				canvas.width = Math.floor(parent.offsetWidth);
+				canvas.height = Math.floor(parent.offsetHeight);
+				canvas.setAttribute('class', 'smallvideo');
+				
+				parent.appendChild(canvas);
+			}
+		
+		}
+
+		
+
+		document.addEventListener('DOMContentLoaded', function(){
+		  var v = document.getElementById('previewVideo');
+		  var canvases = document.getElementsByClassName('smallvideo');
+		  
+		  v.addEventListener('play', function(){
+		  	
+		  	  updateBigVideo(this,canvases);
+		  },false);
+		},false);
+
+		function updateBigVideo(v,c) {
+			
+		    if(v.paused || v.ended) return false;
+		    for(var i = 0; i < c.length; i++){
+		    	
+		    	c[i].getContext('2d').drawImage(v,0,0,c[i].width,c[i].height);
+		    }
+		    
+		    setTimeout(updateBigVideo,5,v,c);
+		}
+
+
+
+    </script>
+</body>

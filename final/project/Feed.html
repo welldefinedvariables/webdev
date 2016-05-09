@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="stylesheet" href="css/app.css">
+    <style>
+    .title-bar {
+        width: 100%;
+        z-index: 10;
+        transition: height .25s ease;
+        height: 4.5em;
+    }
+    </style>
+</head>
+
+<body id="container">
+    <div class="column">
+        <header class="row sticky-container" data-sticky-container>
+            <div class="title-bar sticky" data-sticky data-options="marginTop:0; stickyOn:small;" style="border-bottom:double; padding-top:4px; background:#303030;">
+                <img class="float-center" src="imgs/logo.png" alt="AddressSpace" style="height:2.5em;">
+            </div>
+        </header>
+        <div class="row small-12 columns">
+            <div class="row">
+                <a href="http://diveintohtml5.info/" class="small-10 columns">
+                    <h4>Dive into HTML5</h4>
+                    <p>
+                        Dive Into HTML5 elaborates on a hand-picked selection of features from the HTML5 specification and other fine standards.
+                    </p>
+                    <p>Mark Pilgrim with contributions from the community</p>
+                </a>
+                <button class="dropdown button small-2 columns" data-toggle="tgl1"></button>
+                <div class="callout small-12 columns is-hidden" id="tgl1" data-toggler="is-hidden">
+                    <div class="gallery callout secondary">
+                        <img src="imgs/html5_1.jpg" alt="Dive into HTML5" style="height:20em;">
+                    </div>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>Author</td>
+                                <td>Mark Pilgrim</td>
+                            </tr>
+                            <tr>
+                                <td>Type</td>
+                                <td>Tutorial</td>
+                            </tr>
+                            <tr>
+                                <td>Language</td>
+                                <td>English</td>
+                            </tr>
+                            <tr>
+                                <td>Published</td>
+                                <td>2009</td>
+                            </tr>
+                            <tr>
+                                <td>Tags</td>
+                                <td>Web, HTML5</td>
+                            </tr>
+                            <tr>
+                                <td>Description</td>
+                                <td>HTML5 is creating more and more a name for itself in our industry, but while it excites those on the cutting edge of web technology, many are left feeling uncertain about it. Its ongoing development has been victim of politics, fragmentation and more, leaving few to have a good grasp of its current status. However, a lot of the technologies that make up HTML5 (and more) have become mature, even implemented across all the latest browsers--but did you know that? If you've kept an arms length to everything going on with HTML5, now is the time to dive into its waters and explore.</td>
+                            </tr>
+                            <tr>
+                                <td>Review</td>
+                                <td>
+                                    <p>I must say: I enjoyed going through this book. It is written in an opinionated and slightly irreverent style, so I found it a mildly amusing read.</p>
+                                    <p>That being said: why do people buy a book on HTML5? Some would like to have a good in-depth reference on the ins and outs of the new language. Well now - that's not this book. Others might be new to web development and think learning HTML5 would be a good starting point. While they are right that HTML (5 or 4) is the place to start, this book surely isn't.
+                                    </p>
+                                    <p>There's some depth when it comes to background, but much less when it comes to HTML5 itself or how to use it. True, the &ltcanvas&gt tag and geolocation are covered pretty much in detail, but the author made some hard to defend choices in spending his paper estate.
+                                    </p>
+                                    <p>HTML5 gives us no more than a handful of new tags, still some of those ( &ltmark&gt and &ltsection&gt, for example) are simply mentioned once and that's that. No examples, no advise on where to use them, nothing on browser support. Yet the book takes five pages at the start to tell the story of how the img-tag came into being some 15 years ago. Again, mildly amusing, but probably not the reason you are thinking of buying this book.
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Related</td>
+                                <td>None</td>
+                            </tr>
+                            <tr>
+                                <td>Alternative Names</td>
+                                <td>HTML5: Up and Running</td>
+                            </tr>
+                            <tr>
+                                <td>GoodReads Rating</td>
+                                <td>4.20</td>
+                            </tr>
+                            <tr>
+                                <td>Amazon Rating</td>
+                                <td>3.80</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="row">
+                <a href="http://blog.cryptographyengineering.com/2011/09/what-is-random-oracle-model-and-why.html" class="small-10 columns">
+                    <h4>What is the Random Oracle Model and why?</h4>
+                    <p>
+                        This is the first in a series of posts on the Random Oracle Model.
+                    </p>
+                    <p>Matthew Green</p>
+                </a>
+                <button class="dropdown button small-2 columns" data-toggle="tgl2"></button>
+                <table class="small-12 columns is-hidden" id="tgl2" data-toggler="is-hidden">
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="row">
+                <a href="https://www.lynda.com/Foundation-tutorials/Up-Running-Foundation-5/161085-2.html" class="small-10 columns">
+                    <h4>Up and Running with Foundation 5</h4>
+                    <p>
+                        In this advanced course, learn to build responsive websites with Foundation—the clean, simple design framework that uses integrated CSS and JavaScript.
+                    </p>
+                    <p>Jen Kramer</p>
+                </a>
+                <button class="dropdown button small-2 columns" data-toggle="tgl3"></button>
+                <table class="small-12 columns is-hidden" id="tgl3" data-toggler="is-hidden">
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- <div style="height:1800px;"></div> -->
+        <nav class="row sticky-container" data-sticky-container>
+            <div class="title-bar sticky" data-sticky data-stick-to="bottom" data-options="marginBottom:0; stickyOn:small;" style="background:#D0A030;">
+                <a class="button small-4 columns">
+                    <img class="float-center" src="imgs/technology-1.png" alt="Feed" style="height:2.5em;">
+                </a>
+                <a class="button small-4 columns">
+                    <img class="float-center" src="imgs/interface.png" alt="Search" style="height:2.5em;">
+                </a>
+                <a class="button small-4 columns">
+                    <img class="float-center" src="imgs/round.png" alt="Account" style="height:2.5em;">
+                </a>
+            </div>
+        </nav>
+    </div>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/what-input/what-input.js"></script>
+    <script src="bower_components/foundation-sites/dist/foundation.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

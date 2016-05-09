@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="stylesheet" href="css/app.css">
+    <style>
+    .title-bar {
+        width: 100%;
+        z-index: 10;
+        transition: height .25s ease;
+        height: 4.5em;
+    }
+    </style>
+</head>
+
+<body id="container">
+    <div class="column">
+        <header class="row sticky-container" data-sticky-container>
+            <div class="title-bar sticky" data-sticky data-options="marginTop:0; stickyOn:small;" style="border-bottom:double; padding-top:4px; background:#303030;">
+                <img class="float-center" src="imgs/logo.png" alt="AddressSpace" style="height:2.5em;">
+            </div>
+        </header>
+        <div id="content" class="row">
+            <div class="column">
+                <div class="row sticky-container" data-sticky-container>
+                    <button class="expanded button sticky" data-sticky data-stick-to="bottom" data-options="marginBottom:6; stickyOn:small;">Logout</button>
+                </div>
+                <div class="row">
+                    <h4 class="small-10 columns">Saved Filters</h4>
+                    <button class="small-2 columns">X</button>
+                </div>
+                <div class="row">
+                    <div>
+                        <a class="small-9 columns button">Filter 1</a>
+                        <a class="small-3 button" style="visibility:hidden;">Delete</a>
+                    </div>
+                </div>
+            </div>
+            <!--  <div style="height:1800px;"></div> -->
+        </div>
+        <nav class="row sticky-container" data-sticky-container>
+            <div class="title-bar sticky" data-sticky data-stick-to="bottom" data-options="marginBottom:0; stickyOn:small;" style="background:#D0A030;">
+                <a class="button small-4 columns">
+                    <img class="float-center" src="imgs/technology-1.png" alt="Feed" style="height:2.5em;">
+                </a>
+                <a class="button small-4 columns">
+                    <img class="float-center" src="imgs/interface.png" alt="Search" style="height:2.5em;">
+                </a>
+                <a class="button small-4 columns">
+                    <img class="float-center" src="imgs/round.png" alt="Account" style="height:2.5em;">
+                </a>
+            </div>
+        </nav>
+    </div>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/what-input/what-input.js"></script>
+    <script src="bower_components/foundation-sites/dist/foundation.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

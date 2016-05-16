@@ -14,6 +14,28 @@
         transition: height .25s ease;
         height: 4.5em;
     }
+
+    #content{
+        background-image: url("imgs/slash_it.png");
+        height:100vh;
+        padding:16px;
+    }
+    .tabs{
+        background:none;
+        border:none;
+        border-bottom:4px double rgba(208, 160, 48, 0.1);
+        /*border-bottom:1px solid #D0A030;*/
+    }
+    .tabs-content{
+        background:none;
+        border:none;
+        border-bottom:4px double #D0A030;
+    }
+    .tabs-title > a:focus, .tabs-title > a[aria-selected='true']{
+        background: #D0A030;
+        color:#202020;
+        font-weight:bold;
+    }
     </style>
 </head>
 
@@ -24,14 +46,14 @@
                 <img class="float-center" src="imgs/logo.png" alt="AddressSpace" style="height:2.5em;">
             </div>
         </header>
-        <div class="row">
+        <div id="content" class="row">
             <ul class="tabs" data-tabs id="loginregister">
                 <li class="tabs-title is-active"><a href="#login" aria-selected="true">Login</a></li>
                 <li class="tabs-title"><a href="#register">Register</a></li>
             </ul>
             <div class="tabs-content" data-tabs-content="loginregister">
                 <div class="tabs-panel is-active" id="login">
-                    <form action="" method="POST" class="callout primary">
+                    <form action="" method="POST" class="">
                         <strong>Username</strong>
                         <input type="text" name="username">
                         <strong>Password</strong>
@@ -40,7 +62,7 @@
                     </form>
                 </div>
                 <div class="tabs-panel" id="register">
-                    <form action="" method="POST" class="callout primary">
+                    <form action="" method="POST" class="">
                         <strong>Username</strong>
                         <input type="text" name="username">
                         <strong>Password</strong>
